@@ -57,7 +57,7 @@ subj.act.av <- tot.df %>%
         group_by(subject, activity, activityname) %>% 
         summarise_each(funs(mean(.,na.rm=T)))
 
-write.table(subj.act.av, "subject_act_avg.csv")
+write.table(subj.act.av, "subject_act_avg.txt", row.names=F)
 
 
 
